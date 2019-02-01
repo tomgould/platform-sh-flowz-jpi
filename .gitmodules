@@ -1,0 +1,6 @@
+[submodule "Flows-API"]
+	path = Flows-API
+	url = https://github.com/brightsitesconsulting/Flows-API.git
+[submodule "jpi-pwamp"]
+	path = jpi-pwamp
+	url = https://github.com/brightsitesconsulting/jpi-pwamp.git
