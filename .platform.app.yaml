@@ -1,0 +1,13 @@
+name: "jpi-pwamp"
+type: "nodejs:10"
+disk: 512
+dependencies:
+  nodejs:
+    pm2: "^2.5.0"
+hooks:
+  build: |
+    npm install
+    npm run build-react
+web:
+  commands:
+    start: "PM2_HOME=/run pm2 start ./app/_bin/react.server.js --no-daemon"
